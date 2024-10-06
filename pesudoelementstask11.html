@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.menu-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 300px;
+}
+
+.menu-card::before {
+    content: "abhi's adda";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff7e5f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.menu-item::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #ddd;
+    margin: 10px 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    margin: 0;
+    color: #ff7e5f;
+}
+
+p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.price {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #ff7e5f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="menu-card">
+        <h1>Restaurant Menu</h1>
+        <div class="menu-item">
+            <h2>Grilled Chicken</h2>
+            <p>Delicious grilled chicken served with a side of vegetables.</p>
+            <span class="price">$12.99</span>
+        </div>
+        <div class="menu-item">
+            <h2>Spaghetti Carbonara</h2>
+            <p>Classic Italian pasta with creamy sauce and bacon.</p>
+            <span class="price">$10.99</span>
+        </div>
+        <div class="menu-item">
+            <h2>Caesar Salad</h2>
+            <p>Fresh romaine lettuce with Caesar dressing and croutons.</p>
+            <span class="price">$8.99</span>
+        </div>
+    </div>
+</body>
+</html>
